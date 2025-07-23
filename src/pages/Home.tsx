@@ -70,9 +70,9 @@ const Home = () => {
                   Explore Technology <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button variant="finance" size="lg" asChild>
-                <Link to="/finance">
-                  Financial Insights <ArrowRight className="ml-2 h-5 w-5" />
+              <Button variant="outline" size="lg" asChild>
+                <Link to="/contact">
+                  Get In Touch <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
             </div>
