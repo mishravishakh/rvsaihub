@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, TrendingUp, DollarSign } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import rvsLogo from "@/assets/rvs-logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,13 +22,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="relative">
-              <TrendingUp className="h-8 w-8 text-primary group-hover:text-primary-light transition-smooth" />
-              <DollarSign className="h-4 w-4 text-secondary absolute -bottom-1 -right-1" />
-            </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              RVS
-            </span>
+            <img 
+              src={rvsLogo} 
+              alt="RVS Logo" 
+              className="h-10 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}

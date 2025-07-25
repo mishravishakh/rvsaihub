@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { TrendingUp, DollarSign, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import rvsLogo from "@/assets/rvs-logo.png";
 
 const Footer = () => {
   return (
@@ -9,11 +10,11 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="flex items-center space-x-2 mb-4">
-              <div className="relative">
-                <TrendingUp className="h-8 w-8 text-white" />
-                <DollarSign className="h-4 w-4 text-secondary absolute -bottom-1 -right-1" />
-              </div>
-              <span className="text-xl font-bold text-white">RVS</span>
+              <img 
+                src={rvsLogo} 
+                alt="RVS Logo" 
+                className="h-12 w-auto object-contain brightness-0 invert"
+              />
             </Link>
             <p className="text-background/80 mb-4 max-w-md">
               RVS is your forward-thinking hub that explores the latest in financial 
@@ -27,7 +28,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>470 660 9133</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
@@ -48,11 +49,6 @@ const Footer = () => {
               <li>
                 <Link to="/technology" className="hover:text-white transition-smooth">
                   Technology
-                </Link>
-              </li>
-              <li>
-                <Link to="/finance" className="hover:text-white transition-smooth">
-                  Finance
                 </Link>
               </li>
               <li>
