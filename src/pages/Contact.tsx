@@ -39,24 +39,21 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // EmailJS configuration - you'll need to set these up
-      const serviceId = 'service_rvs_contact'; // Replace with your EmailJS service ID
-      const templateId = 'template_rvs_form'; // Replace with your EmailJS template ID
-      const publicKey = 'your_public_key_here'; // Replace with your EmailJS public key
+      // EmailJS configuration
+      const serviceId = 'service_rvs_contact';
+      const templateId = 'template_rvs_form'; 
+      const publicKey = 'YOUR_EMAILJS_PUBLIC_KEY'; // Replace this with your actual EmailJS public key
 
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
         message: formData.message,
-        to_email: 'rvsinfotech01@gmail.com'
+        to_email: 'rvsinfotech01@gmail.com',
+        reply_to: formData.email
       };
 
-      // For now, we'll simulate the email sending
-      // Uncomment and configure the below when EmailJS is set up:
-      // await emailjs.send(serviceId, templateId, templateParams, publicKey);
-
-      // Simulate successful submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Send email using EmailJS
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
       
       toast({
         title: "Message Sent Successfully!",
