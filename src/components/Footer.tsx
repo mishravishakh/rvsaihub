@@ -13,7 +13,7 @@ const Footer = () => {
               <img 
                 src={rvsLogo} 
                 alt="RVS Logo" 
-                className="h-12 w-auto object-contain brightness-0 invert"
+                className="h-12 w-auto object-contain"
               />
             </Link>
             <p className="text-background/80 mb-4 max-w-md">

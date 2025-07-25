@@ -11,6 +11,8 @@ import {
   ArrowRight,
   CheckCircle
 } from "lucide-react";
+import { useCountAnimation } from "@/hooks/useCountAnimation";
+import AnimatedCounter from "@/components/AnimatedCounter";
 
 const Home = () => {
   const features = [
@@ -37,10 +39,10 @@ const Home = () => {
   ];
 
   const stats = [
-    { value: "500+", label: "Clients Served" },
-    { value: "99.9%", label: "Uptime" },
-    { value: "24/7", label: "Support" },
-    { value: "50+", label: "Integrations" }
+    { value: 500, label: "Clients Served", suffix: "+" },
+    { value: 99.9, label: "Uptime", suffix: "%" },
+    { value: 24, label: "Support", suffix: "/7" },
+    { value: 50, label: "Integrations", suffix: "+" }
   ];
 
   return (
@@ -87,9 +89,14 @@ const Home = () => {
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                  {stat.value}
+                  <AnimatedCounter 
+                    end={stat.value} 
+                    suffix={stat.suffix}
+                    duration={2500}
+                    startDelay={index * 200}
+                  />
                 </div>
-                <div className="text-muted-foreground">{stat.label}</div>
+                <div className="text-muted-foreground font-medium">{stat.label}</div>
               </div>
             ))}
           </div>

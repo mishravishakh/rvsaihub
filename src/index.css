@@ -139,17 +139,20 @@
     background: var(--gradient-secondary);
   }
   
-  .gradient-hero {
-    background: var(--gradient-hero);
-  }
+   .gradient-hero {
+     background: var(--gradient-hero);
+     color: white;
+   }
   
-  .gradient-tech {
-    background: var(--gradient-tech);
-  }
+   .gradient-tech {
+     background: var(--gradient-tech);
+     color: white;
+   }
   
-  .gradient-finance {
-    background: var(--gradient-finance);
-  }
+   .gradient-finance {
+     background: var(--gradient-finance);
+     color: white;
+   }
   
   .shadow-glow {
     box-shadow: var(--shadow-glow);
