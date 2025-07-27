@@ -127,7 +127,7 @@ const Contact = () => {
             Get In Touch
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Ready to transform your business with innovative financial and technology solutions? 
+            Ready to transform your business with innovative technology solutions? 
             We're here to help you succeed.
           </p>
         </div>
@@ -220,98 +220,37 @@ const Contact = () => {
               </Card>
             </div>
 
-            {/* Contact Information */}
+            {/* Services */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
+                <h2 className="text-3xl font-bold mb-6">How Can We Help?</h2>
                 <p className="text-muted-foreground mb-8">
-                  Choose the best way to reach us. We're here to help with all your 
-                  financial and technology needs.
+                  We're here to help with all your technology needs and innovative solutions.
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {contactInfo.map((info, index) => (
-                  <Card key={index} className="hover:shadow-lg transition-smooth">
-                    <CardContent className="p-6">
-                      <div className="flex items-center mb-4">
-                        <div className="p-2 bg-primary/10 rounded-lg mr-4">
-                          <info.icon className="h-6 w-6 text-primary" />
+              <div className="space-y-4">
+                {services.map((service, index) => (
+                  <Card key={index} className="hover:shadow-md transition-smooth">
+                    <CardContent className="p-4">
+                      <div className="flex items-center">
+                        <div className="p-2 bg-secondary/10 rounded-lg mr-4">
+                          <service.icon className="h-5 w-5 text-secondary" />
                         </div>
                         <div>
-                          <h3 className="font-semibold">{info.title}</h3>
+                          <h4 className="font-medium">{service.title}</h4>
+                          <p className="text-sm text-muted-foreground">{service.description}</p>
                         </div>
                       </div>
-                      <p className="font-medium text-foreground mb-1">{info.content}</p>
-                      <p className="text-sm text-muted-foreground">{info.description}</p>
                     </CardContent>
                   </Card>
                 ))}
-              </div>
-
-              {/* Services */}
-              <div>
-                <h3 className="text-xl font-semibold mb-4">How Can We Help?</h3>
-                <div className="space-y-4">
-                  {services.map((service, index) => (
-                    <Card key={index} className="hover:shadow-md transition-smooth">
-                      <CardContent className="p-4">
-                        <div className="flex items-center">
-                          <div className="p-2 bg-secondary/10 rounded-lg mr-4">
-                            <service.icon className="h-5 w-5 text-secondary" />
-                          </div>
-                          <div>
-                            <h4 className="font-medium">{service.title}</h4>
-                            <p className="text-sm text-muted-foreground">{service.description}</p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-20 bg-muted">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Quick Answers
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="hover:shadow-lg transition-smooth">
-              <CardContent className="p-6 text-center">
-                <CheckCircle2 className="h-8 w-8 text-primary mx-auto mb-4" />
-                <h3 className="font-semibold mb-2">Fast Response</h3>
-                <p className="text-sm text-muted-foreground">
-                  We respond to all inquiries within 24 hours
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="hover:shadow-lg transition-smooth">
-              <CardContent className="p-6 text-center">
-                <Users className="h-8 w-8 text-primary mx-auto mb-4" />
-                <h3 className="font-semibold mb-2">Expert Team</h3>
-                <p className="text-sm text-muted-foreground">
-                  Work with experienced professionals
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="hover:shadow-lg transition-smooth">
-              <CardContent className="p-6 text-center">
-                <Headphones className="h-8 w-8 text-primary mx-auto mb-4" />
-                <h3 className="font-semibold mb-2">Ongoing Support</h3>
-                <p className="text-sm text-muted-foreground">
-                  Continuous support throughout your journey
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

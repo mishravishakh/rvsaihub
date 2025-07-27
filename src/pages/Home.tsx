@@ -19,22 +19,22 @@ const Home = () => {
     {
       icon: Brain,
       title: "AI-Driven Insights",
-      description: "Leverage artificial intelligence for smarter financial decisions and technology strategies."
+      description: "Leverage artificial intelligence for smarter technology strategies and data-driven decisions."
     },
     {
       icon: Shield,
       title: "Secure Solutions",
-      description: "Enterprise-grade security for all your financial and technological operations."
+      description: "Enterprise-grade security for all your technological operations and data protection."
     },
     {
       icon: Zap,
       title: "Lightning Fast",
-      description: "Rapid deployment and instant access to cutting-edge financial tools."
+      description: "Rapid deployment and instant access to cutting-edge technology tools and solutions."
     },
     {
       icon: BarChart3,
       title: "Data Analytics",
-      description: "Advanced analytics to track performance and optimize your financial portfolio."
+      description: "Advanced analytics to track performance and optimize your technology infrastructure."
     }
   ];
 
@@ -53,18 +53,14 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center">
             <div className="flex justify-center mb-6">
-              <div className="relative">
-                <TrendingUp className="h-16 w-16 text-primary" />
-                <DollarSign className="h-8 w-8 text-secondary absolute -bottom-2 -right-2" />
-              </div>
+              <TrendingUp className="h-16 w-16 text-primary" />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Welcome to RVS
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               Your forward-thinking hub that explores the latest in 
-              <span className="text-primary font-semibold"> financial strategies</span> and 
-              <span className="text-secondary font-semibold"> emerging technologies</span>
+              <span className="text-secondary font-semibold"> emerging technologies</span> and innovative solutions
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="lg" asChild>
@@ -82,26 +78,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-muted">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                  <AnimatedCounter 
-                    end={stat.value} 
-                    suffix={stat.suffix}
-                    duration={2500}
-                    startDelay={index * 200}
-                  />
-                </div>
-                <div className="text-muted-foreground font-medium">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Features Section */}
       <section className="py-20">
@@ -111,7 +87,7 @@ const Home = () => {
               Why Choose RVS?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              We combine cutting-edge technology with proven financial expertise 
+              We combine cutting-edge technology with proven expertise 
               to deliver exceptional results for our clients.
             </p>
           </div>
@@ -140,7 +116,7 @@ const Home = () => {
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Join hundreds of forward-thinking companies that trust RVS for their 
-            financial and technology needs.
+            technology needs and innovative solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 

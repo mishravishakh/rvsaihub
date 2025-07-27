@@ -17,9 +17,9 @@ const Footer = () => {
               />
             </Link>
             <p className="text-background/80 mb-4 max-w-md">
-              RVS is your forward-thinking hub that explores the latest in financial 
-              strategies and emerging technologies. We bridge the gap between finance 
-              and technology innovation.
+              RVS is your forward-thinking hub that explores the latest in emerging 
+              technologies and innovative solutions. We bridge the gap between technology 
+              innovation and business transformation.
             </p>
             <div className="space-y-2 text-sm text-background/80">
               <div className="flex items-center space-x-2">
@@ -65,8 +65,8 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-background/80">
               <li>Technology Solutions</li>
               <li>AI & Automation</li>
-              <li>Investment Insights</li>
               <li>Digital Transformation</li>
+              <li>Innovation Consulting</li>
             </ul>
           </div>
         </div>
