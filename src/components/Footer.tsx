@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <TransparentLogo
-                src="/lovable-uploads/a21bf342-d7f4-4c3d-96c0-431674de450c.png"
+                src="/lovable-uploads/eef838f7-3a63-495f-8ab5-a048d667e3f4.png"
                 alt="RVS Logo" 
                 className="h-12 w-auto object-contain"
               />
