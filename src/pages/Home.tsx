@@ -133,7 +133,7 @@ const Home = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white text-white hover:bg-white hover:text-primary" 
+              className="border-white/50 text-white bg-white/10 hover:bg-white hover:text-primary backdrop-blur-sm" 
               asChild
             >
               <Link to="/technology">
