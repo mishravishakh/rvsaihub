@@ -23,7 +23,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
             <img 
-              src="/lovable-uploads/4ee08ab8-345e-40b0-9d4a-47c5fb510768.png" 
+              src="/lovable-uploads/a21bf342-d7f4-4c3d-96c0-431674de450c.png" 
               alt="RVS Logo" 
               className="h-10 w-auto object-contain"
             />
