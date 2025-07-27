@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
-import rvsLogo from "@/assets/rvs-logo.png";
+import TransparentLogo from "@/components/TransparentLogo";
 
 const Footer = () => {
   return (
@@ -10,8 +10,8 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="flex items-center space-x-2 mb-4">
-              <img 
-                src="/lovable-uploads/a21bf342-d7f4-4c3d-96c0-431674de450c.png" 
+              <TransparentLogo
+                src="/lovable-uploads/a21bf342-d7f4-4c3d-96c0-431674de450c.png"
                 alt="RVS Logo" 
                 className="h-12 w-auto object-contain"
               />
