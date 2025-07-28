@@ -137,7 +137,7 @@ const Contact = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
+            {/* Google Form */}
             <div>
               <Card className="shadow-lg">
                 <CardHeader>
@@ -150,72 +150,20 @@ const Contact = () => {
                   </p>
                 </CardHeader>
                 <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium mb-2">
-                        Full Name *
-                      </label>
-                      <Input
-                        id="name"
-                        name="name"
-                        type="text"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        required
-                        placeholder="Your full name"
-                        className="w-full"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium mb-2">
-                        Email Address *
-                      </label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                        placeholder="your.email@example.com"
-                        className="w-full"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium mb-2">
-                        Message *
-                      </label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleInputChange}
-                        required
-                        placeholder="Tell us about your project or inquiry..."
-                        rows={6}
-                        className="w-full resize-none"
-                      />
-                    </div>
-                    
-                    <Button 
-                      type="submit" 
-                      className="w-full" 
-                      variant="hero"
-                      size="lg"
-                      disabled={isSubmitting}
-                    >
-                      {isSubmitting ? (
-                        "Sending..."
-                      ) : (
-                        <>
-                          <Send className="mr-2 h-5 w-5" />
-                          Send Message
-                        </>
-                      )}
-                    </Button>
-                  </form>
+                  <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSf7l8zDcn1H3k2m9p4N5xQ6Y7R8wE9tU0vF2gH3i4J5kL6m7n/viewform?embedded=true" 
+                    width="100%" 
+                    height={600} 
+                    frameBorder={0} 
+                    marginHeight={0} 
+                    marginWidth={0}
+                    className="rounded-md"
+                  >
+                    Loading...
+                  </iframe>
+                  <p className="text-sm text-muted-foreground mt-4 text-center">
+                    Having trouble viewing the form? <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7l8zDcn1H3k2m9p4N5xQ6Y7R8wE9tU0vF2gH3i4J5kL6m7n/viewform" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Open in new tab</a>
+                  </p>
                 </CardContent>
               </Card>
             </div>
